@@ -1,0 +1,37 @@
+xmp > #html, #css, #js, #php {
+        margin: 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+	
+	
+pre > #html, #css, #js, #php {
+        margin: 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }	
+
+code > #html, #css, #js, #php {
+        margin: 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+	
+	.ace_editor {
+		border: 0px;
+		margin: 0px;
+
+	}
+	.scrollmargin {
+		height: 80px;
+        text-align: center;
+	}
