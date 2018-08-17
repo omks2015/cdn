@@ -1,5 +1,5 @@
 
-
+.w3-code span{display: inline-block;}
 .w3-panel:after,.w3-panel:before{content:"";display:table;clear:both}
 .w3-card{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
 .w3-panel{padding:0px;}
