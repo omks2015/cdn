@@ -1,10 +1,9 @@
 
-
 .w3-panel:after,.w3-panel:before{content:"";display:table;clear:both}
 .w3-card{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
 .w3-panel{padding:0px;}
 .w3-panel{margin-top:0px;margin-bottom:0px}
-.w3-code{font-family:Consolas,"courier new";font-size:16px}
+.w3-code{font-family:Monaco, "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;font-size:16px}
 .w3-code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
 .w3-code{margin-top:16px!important;margin-bottom:16px!important}
 /* Colors */
