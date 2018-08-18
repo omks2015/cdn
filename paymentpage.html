@@ -1,51 +1,20 @@
-
 <html>
   <head>
-
-    <script src="https://js.instamojo.com/v1/checkout.js"></script>
-    <script>
-      /* Start client-defined Callback Handler Functions */
-      function onOpenHandler () {
-        alert('Payments Modal is Opened');
-      }
-
-      function onCloseHandler () {
-        alert('Payments Modal is Closed');
-      }
-
-      function onPaymentSuccessHandler (response) {
-        alert('Payment Success');
-		document.paymentpage.submit();
-        console.log('Payment Success Response', response);
-      }
-
-      function onPaymentFailureHandler (response) {
-        alert('Payment Failure');
-		document.paymentpage.status.value = "N";
-        document.paymentpage.submit();
-        console.log('Payment Failure Response', response);
-      }
-      /* End client-defined Callback Handler Functions */
-
-      /* Configuring Handlers */
-      Instamojo.configure({
-        handlers: {
-          onOpen: onOpenHandler,
-          onClose: onCloseHandler,
-          onSuccess: onPaymentSuccessHandler,
-          onFailure: onPaymentFailureHandler
-        }
-      });
-      
-      function onButtonClick() {
-        Instamojo.open('https://test.instamojo.com/@nkselvakumaran');
-      }
-    </script>
+  <style>
+  .body, body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
+  }
+  iframe {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  }
+  </style>
   </head>
   <body>
-    <button onclick="onButtonClick()">
-      Open Instapay
-    </button>	
-
+<iframe src="https://payments.gettinghost.com/paymentpage.php" width="100%" height="100%"></iframe>
   </body>
 </html>
