@@ -1,5 +1,5 @@
 
-.syntax{font-family:Monaco, "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;font-size:16px; border: 1px solid #e1e1e8;}
+.syntax{font-family:inherit !important;font-size:16px; border: 1px solid #e1e1e8;}
 .syntax{width:auto;background-color:#f7f7f9;padding:8px 12px;border-left:4px solid #4CAF50; word-wrap:break-word}
 .syntax{margin-top:16px!important;margin-bottom:16px!important}
 /* Colors */
