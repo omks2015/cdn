@@ -1,11 +1,7 @@
 
-.w3-panel:after,.w3-panel:before{content:"";display:table;clear:both}
-.w3-card{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
-.w3-panel{padding:0px;}
-.w3-panel{margin-top:0px;margin-bottom:0px}
-.w3-code{font-family:inherit !important;font-size:16px; font-weight: 450;}
-.w3-code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
-.w3-code{margin-top:16px!important;margin-bottom:16px!important}
+.syntax{font-family:Monaco, "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;font-size:16px; border: 1px solid #e1e1e8;}
+.syntax{width:auto;background-color:#f7f7f9;padding:8px 12px;border-left:4px solid #4CAF50; word-wrap:break-word}
+.syntax{margin-top:16px!important;margin-bottom:16px!important}
 /* Colors */
 .w3-amber,.w3-hover-amber:hover{color:#000!important;background-color:#ffc107!important}
 .w3-aqua,.w3-hover-aqua:hover{color:#000!important;background-color:#00ffff!important}
