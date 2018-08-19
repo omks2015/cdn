@@ -1,46 +1,52 @@
 /* w3codecolor ver 1.31 by w3schools.com */
+
+w3CodeColor();
+
 function w3CodeColor() {
   var x, i, j, k, l, modes = ["html", "js", "css", "sql", "python"];
   if (!document.getElementsByClassName) {return;}
   k = modes.length;
   for (j = 0; j < k; j++) {
-    x = document.getElementsByClassName(modes[j] + "High");
+    x = document.getElementsByClassName(modes[j]);
     l = x.length;
     for (i = 0; i < l; i++) {
       x[i].innerHTML = w3CodeColorize(x[i].innerHTML, modes[j]);
     }
   }
 }
+
+
+
 function w3CodeColorize(x, lang) {
-  var tagcolor = "mediumblue";
-  var tagnamecolor = "brown";
-  var attributecolor = "red";
-  var attributevaluecolor = "mediumblue";
-  var commentcolor = "green";
-  var cssselectorcolor = "brown";
-  var csspropertycolor = "red";
-  var csspropertyvaluecolor = "mediumblue";
+  var tagcolor = "#7D2727";
+  var tagnamecolor = "#7D2727";
+  var attributecolor = "#c7254e";
+  var attributevaluecolor = "#101094";
+  var commentcolor = "#999";
+  var cssselectorcolor = "#7D2727";
+  var csspropertycolor = "#c7254e";
+  var csspropertyvaluecolor = "#101094";
   var cssdelimitercolor = "black";
-  var cssimportantcolor = "red";  
+  var cssimportantcolor = "#c7254e";  
   var jscolor = "black";
-  var jskeywordcolor = "mediumblue";
-  var jsstringcolor = "brown";
-  var jsnumbercolor = "red";
+  var jskeywordcolor = "#101094";
+  var jsstringcolor = "#d44950";
+  var jsnumbercolor = "#c7254e";
   var jspropertycolor = "black";
-  var phptagcolor = "red";
+  var phptagcolor = "#c7254e";
   var phpcolor = "black";
-  var phpkeywordcolor = "mediumblue";
+  var phpkeywordcolor = "#101094";
   var phpglobalcolor = "goldenrod";
-  var phpstringcolor = "brown";
-  var phpnumbercolor = "red";  
+  var phpstringcolor = "#d44950";
+  var phpnumbercolor = "#c7254e";  
   var pythoncolor = "black";
-  var pythonkeywordcolor = "mediumblue";
-  var pythonstringcolor = "brown";
-  var pythonnumbercolor = "red";  
-  var angularstatementcolor = "red";
+  var pythonkeywordcolor = "#101094";
+  var pythonstringcolor = "#d44950";
+  var pythonnumbercolor = "#c7254e";  
+  var angularstatementcolor = "#c7254e";
   var sqlcolor = "black";
-  var sqlkeywordcolor = "mediumblue";
-  var sqlstringcolor = "brown";
+  var sqlkeywordcolor = "#101094";
+  var sqlstringcolor = "#d44950";
   var sqlnumbercolor = "";  
   if (!lang) {lang = "html"; }
   if (lang == "html") {return htmlMode(x);}
