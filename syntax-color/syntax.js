@@ -22,7 +22,7 @@ function w3CodeColorize(x, lang) {
   var tagnamecolor = "#7D2727";
   var attributecolor = "#c7254e";
   var attributevaluecolor = "#101094";
-  var commentcolor = "#999";
+  var commentcolor = "#008200";
   var cssselectorcolor = "#7D2727";
   var csspropertycolor = "#c7254e";
   var csspropertyvaluecolor = "#101094";
