@@ -1,4 +1,1 @@
-pre {white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; word-wrap: break-all;}
-.syntax{border: 1px solid #e1e1e8;}
-.syntax{width:auto;background-color:#f7f7f9;padding:8px 12px;border-left:4px solid #4CAF50; word-wrap:break-word}
-.syntax{margin-top:16px!important;margin-bottom:16px!important}
+pre{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word;word-wrap:break-all}.syntax{background-color:#f7f7f9;border:1px solid #e1e1e8;border-left:4px solid #4caf50;margin-bottom:16px!important;margin-top:16px!important;padding:8px 12px;width:auto;word-wrap:break-word}
