@@ -412,6 +412,8 @@ function DrawArrow(){
 
 
 function ClearCanvas(){
+	document.getElementById("lazer").play();
+	
 	var canvas = document.getElementById("canvas");
 	var ctx = canvas.getContext('2d');
 	ctx.clearRect(0,0,320,320);
@@ -419,13 +421,16 @@ function ClearCanvas(){
 
 
 function Crush(){
-	/*
+	
+	document.getElementById("crack").play();
+		document.getElementById("lazer").play();
+
 	if(rules.getCandyCrushes().length > 0){
 		setTimeout(function(){
 			rules.moveCandiesDown();
 		}, 500);
 	}
-	*/
+	
 	
 	setTimeout(function(){
 		rules.moveCandiesDown();
@@ -439,5 +444,17 @@ function NewGame(){
 	board.clear();
 	board.resetScore();
 	rules.prepareNewGame();
+	
+	var themes = ["theme1","theme2","theme3","theme4","theme5","theme6"]
+
+              // get a random number between 0 and the number of links
+              var randIdx = Math.random() * themes.length;
+              // round it, so it can be used as array index
+              randIdx = parseInt(randIdx, 10);
+              // construct the link to be opened
+              var theme = themes[randIdx];
+			  
+document.getElementById(theme).play();
+	
 }
 
