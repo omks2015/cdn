@@ -445,16 +445,9 @@ function NewGame(){
 	board.resetScore();
 	rules.prepareNewGame();
 	
-	var themes = ["theme1","theme2","theme3","theme4","theme5","theme6"]
+document.getElementById(themes).stop();
 
-              // get a random number between 0 and the number of links
-              var randIdx = Math.random() * themes.length;
-              // round it, so it can be used as array index
-              randIdx = parseInt(randIdx, 10);
-              // construct the link to be opened
-              var theme = themes[randIdx];
-			  
-document.getElementById(theme).play();
+document.getElementById(themes).play();
 	
 }
 
