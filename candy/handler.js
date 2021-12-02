@@ -425,7 +425,9 @@ document.getElementById("move").play();
 
 function Crush(){
 	
-	document.getElementById("crack").play();
+	document.getElementById("move").play();
+	document.getElementById("move").play();
+	document.getElementById("move").play();
 
 	
 	if(rules.getCandyCrushes().length > 0){
