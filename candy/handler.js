@@ -255,6 +255,8 @@ $(document).on("mousedown touchstart", "#canvas", function(evt){
 
 
 $(document).on("mousemove touchmove", "#canvas", function(evt){
+	
+	
 	if (dragDropInfo != null && $("img").is(':animated') == false){
 		var xCoord, yCoord;
 		
@@ -412,8 +414,9 @@ function DrawArrow(){
 
 
 function ClearCanvas(){
-	document.getElementById("lazer").play();
 	
+document.getElementById("move").play();	
+
 	var canvas = document.getElementById("canvas");
 	var ctx = canvas.getContext('2d');
 	ctx.clearRect(0,0,320,320);
@@ -423,8 +426,8 @@ function ClearCanvas(){
 function Crush(){
 	
 	document.getElementById("crack").play();
-		document.getElementById("lazer").play();
 
+	
 	if(rules.getCandyCrushes().length > 0){
 		setTimeout(function(){
 			rules.moveCandiesDown();
@@ -444,10 +447,28 @@ function NewGame(){
 	board.clear();
 	board.resetScore();
 	rules.prepareNewGame();
-	
-document.getElementById(themes).stop();
+playthemes();	
+}
 
-document.getElementById(themes).play();
+playthemes();	
+function playthemes(){
 	
+	var audios = document.getElementsByTagName('audio');
+    for(var i = 0, len = audios.length; i < len;i++){
+            audios[i].pause();
+			audios[i].controls = false;	
+    }
+	
+	var themes = ["theme1","theme2","theme3","theme4","theme5","theme6"]
+
+              // get a random number between 0 and the number of links
+              var randIdx = Math.random() * themes.length;
+              // round it, so it can be used as array index
+              randIdx = parseInt(randIdx, 10);
+              // construct the link to be opened
+              var theme = themes[randIdx];
+document.getElementById(theme).controls = true;	
+document.getElementById(theme).setAttribute("onended","playthemes();");		  
+document.getElementById(theme).play();	
 }
 
